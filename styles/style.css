@@ -3,6 +3,9 @@
 :root{
     --background_color_one: #ffffff;
     --background_color_two: #f2f4f6;
+    --primary: #38A4DC;
+    --border_color: #D6D7D8;
+    --text_color_one: #5C6163;
 
 
 }
@@ -24,8 +27,8 @@ body{
     margin: 0 auto;
     background-color: var(--background_color_one);
     min-height: 10rem;
-    border-left: 1px solid #D6D7D8;
-    border-right: 1px solid #D6D7D8;
+    border-left: 1px solid var(--border_color);
+    border-right: 1px solid var(--border_color);
     box-sizing: border-box;
 }
 .inner {
@@ -33,5 +36,35 @@ body{
     max-width: 73.125rem;
     margin: 0 auto;
     height: inherit;
+
+}
+.top_header {
+
+        background-color: var(--background_color_two);
+        min-height: 3.125rem;
+}
+
+.popular_destinations {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.75rem;
+    line-height: 3.125rem;
+
+}
+
+.popular_destinations a {
+    font-weight: 500;
+    margin-left: 1.875rem;
+
+}
+
+
+.popular_destinations div {
+
+    color: var(--text_color_one);
+}
+a {
+    text-decoration: none;
+    color: var(--primary);
 
 }

@@ -8,6 +8,7 @@
   --text_color_one: #5c6163;
   --text_color_two: #24282a;
   --text_color_three: #939fa4;
+  --text_color_four: #A7B0B4;
 }
 
 html,
@@ -43,7 +44,10 @@ body {
   margin: 0 0 5.625rem 0;
   color: var(--text_color_three);
 }
-
+.best_offers .inner h1 {
+  text-align: left;
+  margin: 0 0 5rem 0;
+}
 .inner_padding {
   padding: 6.875rem 0;
 }
@@ -151,37 +155,31 @@ a.button {
   display: inline-block;
 }
 
-.tours {
-  min-height: 20rem;
-}
-
-.tour_categories{
+.tour_categories {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1.875rem 1.875rem;
-
 }
 .tour_categories > div {
-  position:relative;
-
+  position: relative;
 }
-.rome{
+.rome {
   grid-column: 1 / span 2;
 }
 
-.tour_overlay{
+.tour_overlay {
   position: absolute;
   top: 0;
-  right:0;
-  bottom:0;
-  left:0;
-  display:flex;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
   padding: 1.78rem;
 }
-a.button2{
+a.button2 {
   background-color: var(--primary);
   color: var(--background_color_one);
   font-weight: 500;
@@ -193,9 +191,48 @@ a.button2{
   border-radius: 5px;
 }
 
-.tour_text{
+.tour_text {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--background_color_one);
 }
+.best_offers {
+  background-color: var(--background_color_two);
+}
 
+.best_offers_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.best_offers_row {
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 1.25rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text_color_four);
+}
+
+.best_offers_row strong{
+  color: var(--text_color_two);
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+.best_offers_row img {
+  margin-left: -1.25rem;
+}
+
+.best_offers_row:nth-child(even) {
+  background: var(--background_color_one);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.best_offers_row:nth-child(even) img {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+}

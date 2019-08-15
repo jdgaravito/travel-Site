@@ -36,6 +36,21 @@ body {
   margin: 0 auto;
   height: inherit;
 }
+.inner h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 5.625rem 0;
+  color: var(--text_color_three);
+}
+
+.inner_padding {
+  padding: 6.875rem 0;
+}
+.inner h1 strong {
+  color: var(--text_color_two);
+  font-weight: 700;
+}
 .top-header {
   background-color: var(--background_color_two);
   min-height: 3.125rem;
@@ -66,9 +81,9 @@ a {
   background-color: var(--background_color_one);
 }
 .header_inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
   font-size: 1.75rem;
@@ -87,36 +102,36 @@ a {
   padding: 0.625rem;
   margin: 0.9375rem;
 }
-.page_menu a.active, .page_menu a:hover{
-    background: var(--primary);
-    color: var(--background_color_one);
-    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-} 
+.page_menu a.active,
+.page_menu a:hover {
+  background: var(--primary);
+  color: var(--background_color_one);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
 .phone {
-   font-size: 0.87rem;
-   font-weight: 500;
-   color: var(--primary);
-   display: flex;
-   align-content: center; 
+  font-size: 0.87rem;
+  font-weight: 500;
+  color: var(--primary);
+  display: flex;
+  align-content: center;
 }
 
 .phone span {
-    margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
 
-.hero_header{
+.hero_header {
   height: 43.75rem;
   background-image: url("/assets/img/heroimage.webp");
   background-size: cover;
   text-align: center;
 }
 
-.hero_header_inner{
+.hero_header_inner {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .sub_head_line {
@@ -124,16 +139,63 @@ a {
   font-size: 1.25rem;
   margin-bottom: 3.75rem;
 }
-a.button{
+a.button {
   color: var(--background_color_one);
   font-weight: 500;
   padding: 0 2.5rem;
   line-height: 3.75rem;
 
-  background: linear-gradient(199.55deg, #FDD6BD 0%, #F794A4 100%);
+  background: linear-gradient(199.55deg, #fdd6bd 0%, #f794a4 100%);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
   border-radius: 30px;
   display: inline-block;
 }
 
+.tours {
+  min-height: 20rem;
+}
+
+.tour_categories{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.875rem 1.875rem;
+
+}
+.tour_categories > div {
+  position:relative;
+
+}
+.rome{
+  grid-column: 1 / span 2;
+}
+
+.tour_overlay{
+  position: absolute;
+  top: 0;
+  right:0;
+  bottom:0;
+  left:0;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 1.78rem;
+}
+a.button2{
+  background-color: var(--primary);
+  color: var(--background_color_one);
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.675rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.tour_text{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--background_color_one);
+}
 
